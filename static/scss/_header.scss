@@ -1,0 +1,12 @@
+.feature {
+  height:100vh;
+  box-sizing: border-box;
+  position: relative;
+
+  .intro {
+    height: 200px;
+    top:50%;
+    margin-top:-100px;
+    position:relative;
+  }
+}
