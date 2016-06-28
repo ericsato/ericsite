@@ -1,0 +1,32 @@
+/** Transitions **/
+@mixin transition-speed($speed) {
+  -webkit-transition:$speed;
+  -moz-transition:$speed;
+  -ms-transition:$speed;
+  -o-transition:$speed;
+  transition:$speed;
+}
+
+/** Spacers **/
+@mixin vertical-space($space) {
+  height:$space;
+  width:100%;
+}
+
+.spacer-40 {
+  height:40px;
+  width:100%;
+}
+
+button {
+  height: 50px;
+  min-width:150px;
+  background-color:rgba(67,219,163,1);
+  border:1px solid #43dba3;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color:rgba(67,219,163,0);
+  @include transition-speed(.3s);
+}

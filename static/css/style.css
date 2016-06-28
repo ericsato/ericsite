@@ -17,7 +17,28 @@ body {
   .feature .intro {
     height: 200px;
     top: 50%;
-    margin-top: -100px;
+    margin-top: -140px;
     position: relative; }
+
+/** Transitions **/
+/** Spacers **/
+.spacer-40 {
+  height: 40px;
+  width: 100%; }
+
+button {
+  height: 50px;
+  min-width: 150px;
+  background-color: #43dba3;
+  border: 1px solid #43dba3;
+  box-sizing: border-box; }
+
+button:hover {
+  background-color: rgba(67, 219, 163, 0);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 /*# sourceMappingURL=style.css.map */
