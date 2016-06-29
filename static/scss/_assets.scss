@@ -21,12 +21,15 @@
 button {
   height: 50px;
   min-width:150px;
-  background-color:rgba(67,219,163,1);
-  border:1px solid #43dba3;
+  background-color:rgba(255,108,126,1);
+  border:1px solid #FF6C7E;
   box-sizing: border-box;
+  font-size:12px;
+  color:#ffffff;
 }
 
 button:hover {
-  background-color:rgba(67,219,163,0);
+  background-color:rgba(255,108,126,0);
   @include transition-speed(.3s);
+  color:#000000;
 }

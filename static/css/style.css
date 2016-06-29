@@ -29,17 +29,20 @@ body {
 button {
   height: 50px;
   min-width: 150px;
-  background-color: #43dba3;
-  border: 1px solid #43dba3;
-  box-sizing: border-box; }
+  background-color: #ff6c7e;
+  border: 1px solid #FF6C7E;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #ffffff; }
 
 button:hover {
-  background-color: rgba(67, 219, 163, 0);
+  background-color: rgba(255, 108, 126, 0);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  color: #000000; }
 
 .section {
   box-sizing: border-box;
