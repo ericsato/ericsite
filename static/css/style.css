@@ -1,26 +1,11 @@
-body {
-  font-family: 'Quicksand', sans-serif !important;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-.text-center {
-  text-align: center; }
-
-.float-center {
-  margin: 0 auto;
-  float: none; }
-
-.feature {
-  height: 100vh;
-  box-sizing: border-box; }
-  .feature .intro {
-    height: 200px;
-    top: 50%;
-    margin-top: -140px;
-    position: relative; }
-
 /** Transitions **/
+[class*='col-'] {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
 /** Spacers **/
 .spacer-40 {
   height: 40px;
@@ -44,6 +29,119 @@ button:hover {
   transition: 0.3s;
   color: #000000; }
 
+body {
+  font-family: 'Quicksand', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.text-center {
+  text-align: center; }
+
+.float-center {
+  margin: 0 auto;
+  float: none; }
+
+.h-no-pad {
+  margin-top: -20px; }
+
+.h-no-bold {
+  font-weight: 300; }
+
+.feature {
+  height: 100vh;
+  box-sizing: border-box;
+  margin-top: -80px; }
+  .feature .intro {
+    height: 200px;
+    top: 50%;
+    margin-top: -140px;
+    position: relative; }
+    .feature .intro img {
+      height: 300px;
+      margin: 50px auto; }
+  .feature .primary-nav a {
+    text-decoration: none;
+    color: #000000; }
+  .feature .primary-nav ul.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .feature .primary-nav ul.nav-list li {
+      background-color: rgba(255, 108, 126, 0);
+      width: 250px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0;
+      margin: 0;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .feature .primary-nav ul.nav-list li:hover {
+      background-color: #ff6c7e;
+      color: #ffffff; }
+
+.navbar {
+  background-color: white;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: 60px;
+  padding: 5px 15px;
+  top: -60px;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4);
+  box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .navbar .navbar-circle {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-top: 20px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    -webkit-box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4);
+    -moz-box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4);
+    box-shadow: 0px 1px 2px 1px rgba(166, 166, 166, 0.4); }
+
+.past-main {
+  top: -40px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.past-main-full {
+  top: 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+@media screen and (max-width: 767px) {
+  .feature .intro {
+    text-align: center;
+    top: 0;
+    margin: 0 auto; }
+    .feature .intro img {
+      height: 200px; }
+  .feature .primary-nav ul.nav-list {
+    margin: 0 auto; }
+    .feature .primary-nav ul.nav-list li {
+      margin: 0 auto; } }
 .section {
   box-sizing: border-box;
   margin: 0;
@@ -54,7 +152,24 @@ button:hover {
   padding-bottom: 50px; }
 
 #my-work {
-  background-color: #333333;
+  background-color: #3b3b3b;
   color: #fff; }
+  #my-work .portfolio .portfolio-item {
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  #my-work .portfolio .portfolio-item:hover {
+    border: 1px solid rgba(255, 108, 126, 0.3);
+    background-color: rgba(255, 108, 126, 0.3); }
+
+@media screen and (max-width: 767px) {
+  #my-work .portfolio .portfolio-item {
+    max-width: 350px; } }
 
 /*# sourceMappingURL=style.css.map */

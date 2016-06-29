@@ -10,6 +10,32 @@
 }
 
 #my-work {
-  background-color:#333333;
+  background-color:#3b3b3b;
   color:#fff;
+
+  .portfolio {
+
+    .portfolio-item {
+      height: 300px;
+      width:100%;
+      margin:0 auto;
+      border: 1px solid #ffffff;
+      @include transition-speed($primary-speed);
+    }
+
+    .portfolio-item:hover {
+      border: 1px solid rgba(255,108,126,.3);
+      background-color:rgba(255,108,126,.3);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #my-work {
+    .portfolio {
+      .portfolio-item {
+        max-width:350px;
+      }
+    }
+  }
 }

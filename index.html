@@ -6,33 +6,108 @@
 <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <link rel="stylesheet" href="static/css/simplegrid.css">
 <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
 <body>
+<nav class="navbar">
+  <div class="navbar-circle"></div>
+  <ul>
+    <li>contact</li>
+  </ul>
+</nav>
+
 <div class="grid feature">
-  <div class="col-1-2 intro float-center text-center">
-    <h1>ERIC SATO</h1>
-    <h2>Japanese to English Translator</h2>
-    <div class="spacer-40"></div>
-    <a href="">
-      <button>
-        CONTACT
-      </button>
-    </a>
+  <div class="intro">
+    <div class="col-1-4"></div>
+    <div class="col-1-4">
+      <h1>ERIC SATO</h1>
+      <h2>Freelance work in Tokyo</h2>
+      <div class="primary-nav">
+        <ul class="nav-list">
+          <a href="#my-work"><li>Japanese to English Translator</li></a>
+          <a href=""><li>Close-up Magician</li></a>
+        </ul>
+      </div>
+      <div class="spacer-40"></div>
+      <a href="">
+        <button>
+          CONTACT
+        </button>
+      </a>
+    </div>
+    <div class="col-1-4 intro">
+      <img src="static/img/profile.png" alt="eric profile" />
+    </div>
   </div>
 </div>
 
 <div id="my-work" class="section section-pad">
     <div class="grid grid-pad">
-      <div class="col-1-3">
-        Hello Everyone
+      <div class="col-11-12 push-1-12">
+        <h2>Japanese to English Translator</h2>
+        <h3 class="h-no-pad h-no-bold">/ 和英翻訳者</h3>
       </div>
+      <div class="col-8-12 push-1-12">
+        Over 10 years of freelance translation experience specializing in abstract texts,
+        marketing materials, promotional materials, artistic writing, and many others.
+      </div>
+      <div class="col-3-12"></div>
+    </div>
+
+    <div class="grid grid-pad portfolio">
+      <div class="col-1-2 float-center text-center">
+        <h2>PORTFOLIO</h2>
+      </div>
+      <div class="col-1-3">
+        <div class="portfolio-item">
+        </div>
+      </div>
+      <div class="col-1-3">
+        <div class="portfolio-item">
+        </div>
+      </div>
+      <div class="col-1-3">
+        <div class="portfolio-item">
+        </div>
+      </div>
+
     </div>
 </div>
+
+<script>
+  var mainbottom = $('.feature').offset().top + $('.feature').height();
+
+  // on scroll,
+  $(window).on('scroll',function(){
+
+      // we round here to reduce a little workload
+      stop = Math.round($(window).scrollTop());
+      if (stop - 10 > mainbottom) {
+          $('.navbar').addClass('past-main');
+      } else {
+          $('.navbar').removeClass('past-main');
+     }
+  });
+</script>
+
+<script>
+var main = function () {
+  var navBar   = document.querySelector('.navbar');
+
+  navBar.onmouseover = function () {
+      navBar.classList.add('past-main-full');
+  };
+
+  navBar.onmouseout = function () {
+      navBar.classList.remove('past-main-full');
+  };
+};
+$(document).ready(main);
+</script>
 
 </body>
 

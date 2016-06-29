@@ -1,10 +1,16 @@
 /** Transitions **/
+$primary-speed: .3s;
+
 @mixin transition-speed($speed) {
   -webkit-transition:$speed;
   -moz-transition:$speed;
   -ms-transition:$speed;
   -o-transition:$speed;
   transition:$speed;
+}
+
+[class*='col-'] {
+  @include transition-speed($primary-speed);	
 }
 
 /** Spacers **/
@@ -30,6 +36,6 @@ button {
 
 button:hover {
   background-color:rgba(255,108,126,0);
-  @include transition-speed(.3s);
+  @include transition-speed($primary-speed);
   color:#000000;
 }
