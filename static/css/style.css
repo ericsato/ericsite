@@ -43,9 +43,12 @@ button:hover {
 
 .section {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
   width: 100%; }
+
+.section-pad {
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
 #my-work {
   background-color: #333333;
