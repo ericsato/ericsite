@@ -50,8 +50,7 @@ body {
 
 .feature {
   height: 100vh;
-  box-sizing: border-box;
-  margin-top: -80px; }
+  box-sizing: border-box; }
   .feature .intro {
     height: 200px;
     top: 50%;
