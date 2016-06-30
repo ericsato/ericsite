@@ -10,14 +10,32 @@
 <link rel="stylesheet" href="static/css/simplegrid.css">
 <link rel="stylesheet" href="static/css/style.css">
 
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 350);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 </head>
 
 <body>
 <nav class="navbar">
-  <div class="navbar-circle"></div>
-  <ul>
-    <li>contact</li>
-  </ul>
+  <div class="hamburger">
+    <span class="icon-bar"></span><br>
+    <span class="icon-bar"></span><br>
+    <span class="icon-bar"></span><br>
+  </div>
 </nav>
 
 <div class="grid feature">
@@ -86,7 +104,7 @@
 
       // we round here to reduce a little workload
       stop = Math.round($(window).scrollTop());
-      if (stop - 10 > mainbottom) {
+      if (stop + 500 > mainbottom) {
           $('.navbar').addClass('past-main');
       } else {
           $('.navbar').removeClass('past-main');
@@ -94,20 +112,6 @@
   });
 </script>
 
-<script>
-var main = function () {
-  var navBar   = document.querySelector('.navbar');
-
-  navBar.onmouseover = function () {
-      navBar.classList.add('past-main-full');
-  };
-
-  navBar.onmouseout = function () {
-      navBar.classList.remove('past-main-full');
-  };
-};
-$(document).ready(main);
-</script>
 
 </body>
 
