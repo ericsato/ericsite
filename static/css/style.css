@@ -172,6 +172,14 @@ body {
     border: 1px solid rgba(255, 108, 126, 0.3);
     background-color: rgba(255, 108, 126, 0.3); }
 
+#magician {
+  background-color: #ffffff;
+  color: #000000; }
+
+#contact {
+  background-color: #3b3b3b;
+  color: #fff; }
+
 @media screen and (max-width: 767px) {
   #my-work .portfolio .portfolio-item {
     max-width: 350px; } }
