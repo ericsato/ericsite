@@ -2,16 +2,69 @@
 <html>
 <head>
 <title>Eric Sato - Translator. 和英翻訳</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="static/css/simplegrid.css">
 <link rel="stylesheet" href="static/css/style.css">
+
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 350);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
 </head>
 
 <body>
-<div class="feature">
-  <div class="intro col-4 float-center text-center">
-    <h1>ERIC SATO</h1>
-    <h2>Japanese to English Translator</h2>
+
+<nav class="navbar">
+  <div class="hamburger">
+    <span class="icon-bar"></span><br>
+    <span class="icon-bar"></span><br>
+    <span class="icon-bar"></span><br>
+  </div>
+</nav>
+
+<div class="grid feature">
+  <div class="intro">
+    <div class="col-1-4"></div>
+    <div class="col-1-4">
+      <h1>ERIC SATO</h1>
+      <h2>Freelance work in Tokyo</h2>
+      <div class="primary-nav">
+        <ul class="nav-list">
+          <a href="#my-work"><li>Japanese to English Translator</li></a>
+          <a href=""><li>Close-up Magician</li></a>
+        </ul>
+      </div>
+      <div class="spacer-40"></div>
+      <a href="mailto:me@eric.jp?Subject=Work%20inquiry" target="_top">
+        <button>
+          CONTACT
+        </button>
+      </a>
+    </div>
+    <div class="col-1-4 intro">
+      <img src="static/img/profile.png" alt="eric profile" />
+    </div>
   </div>
 </div>
+
+
 
 </body>
 
